@@ -6,7 +6,7 @@ import Tiktok from '../ui/icon/Tiktok'
 import Youtube from '../ui/icon/Youtube'
 import IconMail from '../../assets/icono_mail.png'
 import IconPhone from '../../assets/icono_telefono.png'
-import IconPin from '../../assets/icono_mail.png'
+import IconPin from '../../assets/icono_ubicacion.png'
 
 
 export const Footer = () => {
@@ -44,9 +44,20 @@ export const Footer = () => {
             <FooterLink href='/'>Registro Nacional de Turismo</FooterLink>
           </ul>
         </nav>
-      <div>
-        <div className='flex gap-1'>
-          <img src='' alt='' />
+      <div className='flex flex-col gap-5'>
+        <div className='flex gap-3 items-center'>
+          <img src={IconMail} alt='' className='h-5'/>
+          info@allintravels.com
+        </div>
+        <div className='flex gap-3 items-center'>
+          <img src={IconPhone} alt='' className='h-5'/>
+          0057 (604) 444 45 83
+        </div>
+        <div className='flex gap-3 items-start'>
+          <img src={IconPin} alt='' className='h-5'/>
+          Carrera 43A # 18 Sur - 135 Of 834,
+          <br />
+          Sao Paulo Plaza Medellín - Colombia.
         </div>
       </div>
     </footer>
